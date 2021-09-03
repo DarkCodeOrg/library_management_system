@@ -1,7 +1,7 @@
 ## Python Project to create a library management system using MySql 
 
 ## Introduction 
-    The Library management system has been developed to eliminate the exissting problems in manually handling the official work inside a library like issuing members and books and keeping an account of which book is available and which is not efficiently. The sofware is expected to eliminate the current roblems of the system. With a pretty GUI anyone even a kid can use this software thus no extraordinary knowledge of computers is needed
+The Library management system has been developed to eliminate the exissting problems in manually handling the official work inside a library like issuing members and books and keeping an account of which book is available and which is not efficiently. The sofware is expected to eliminate the current roblems of the system. With a pretty GUI anyone even a kid can use this software thus no extraordinary knowledge of computers is needed
 
 
 ## Project Requirements :
