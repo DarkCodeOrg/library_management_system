@@ -51,7 +51,6 @@ For windows machine you'd need to download MySql from [MySql.org](https://www.my
 
 ## Features of the program 
     * Adding New Books
-    * Deleting Books
     * Issuing Books
     * Returning Books
     * View all books
