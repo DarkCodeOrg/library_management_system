@@ -34,7 +34,7 @@ For windows machine you'd need to download MySql from [MySql.org](https://www.my
 **PYTHON**
     
     Why python ?
-        * It has easy to use libraries such as Tinter and PIL to handle the GUI of the software
+        * It has easy to use libraries such as Tkinter and PIL to handle the GUI of the software
         * Easily portable thus removing any OS/Arch dependence
 
 ### Back End
