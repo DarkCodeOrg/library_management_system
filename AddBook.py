@@ -16,18 +16,20 @@ def bookRegister():
     status = bookInfo4
     
 
-    insertBook = "insert into"+bookTable+" values('"+bookid+","+title+","+author+","+status+"')"
-
+    insertBook = "insert into "+bookTable+" values('"+bookid+"','"+title+"','"+author+"','"+status+"')"
+    print(insertBook)    ### debug purpose
+    
     try:
         cur.execute(insertBook)
         con.commit()
-        messagebox.showinfo("Added the book successfully")
+        messagebox.showinfo("Success","Added the book successfully")
+
     except:
-        messagebox.showinfo("Cant add to Database, errors occurred")
+        messagebox.showinfo("Error","Cant add to Database, errors occurred")
 
     print(bookid)
     print(title)
-    print(author)
+    print(author)   ###### debug purposes
     print(status)
 
     root.destroy()
@@ -87,13 +89,7 @@ def addBook():
     bookInfo3 = Entry(labelFrame)
     bookInfo3.place(relx=0.3,rely=0.50, relwidth=0.62, relheight=0.08)
         
-    # Book Status
-    #lb4 = Label(labelFrame,text="Status(Avail/issued) : ", bg='black', fg='white')
-    #lb4.place(relx=0.05,rely=0.65, relheight=0.08)
-        
     bookInfo4 = 'avail'
-    #bookInfo4.place(relx=0.3,rely=0.65, relwidth=0.62, relheight=0.08)
-        
     #Submit Button
     SubmitBtn = Button(root,text="SUBMIT",bg='#d1ccc0', fg='red',command=bookRegister)
     SubmitBtn.place(relx=0.28,rely=0.9, relwidth=0.18,relheight=0.08)
