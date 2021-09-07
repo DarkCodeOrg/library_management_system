@@ -7,7 +7,7 @@ from AddBook import *
 #from DeleteBook import *
 from ViewBooks import *
 from IssueBook import *
-#from ReturnBook import *
+from ReturnBook import *
 from AddMember import *
 from DeleteMember import *
 
@@ -63,7 +63,7 @@ btn2.place(relx=0.28,rely=0.4, relwidth=0.45,relheight=0.1)
 btn3 = Button(root,text="Issue Book to Student",bg='#c3ff00', fg='#ff3b00', command = issueBook)
 btn3.place(relx=0.28,rely=0.5, relwidth=0.45,relheight=0.1)
 
-btn4 = Button(root,text="Return Book",bg='#c3ff00', fg='#ff3b00') #, command = returnBook)
+btn4 = Button(root,text="Return Book",bg='#c3ff00', fg='#ff3b00', command = returnBook)
 btn4.place(relx=0.28,rely=0.6, relwidth=0.45,relheight=0.1)
 
 btn5 = Button(root,text="Issue new member",bg='#c3ff00', fg='#ff3b00', command= addMem)
