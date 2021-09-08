@@ -55,4 +55,6 @@ For windows machine you'd need to download MySql from [MySql.org](https://www.my
     * Returning Books
     * View all books
     * Add/Remove new member 
+    * search for members
+    * search for books
 
