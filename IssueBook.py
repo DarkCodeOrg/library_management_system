@@ -131,7 +131,7 @@ def issueBook():
     inf1 = Entry(labelFrame)
     inf1.place(relx=0.3,rely=0.2, relwidth=0.62)
     
-    # Issued To Student name 
+    # Issued To Member ID 
     lb2 = Label(labelFrame,text="Issued To (member ID): ", bg='black', fg='white')
     lb2.place(relx=0.05,rely=0.4)
         
