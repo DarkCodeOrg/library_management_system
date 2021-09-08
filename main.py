@@ -10,6 +10,8 @@ from ReturnBook import *
 from AddMember import *
 from DeleteMember import *
 from ViewMembers import *
+from SearchMember import *
+from SearchBook import *
 
 #TODO(write all the above programs )
 
@@ -55,24 +57,35 @@ headingLabel = Label(headingFrame1, text="Welcome to \n Harnett High School Libr
 headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
 
 btn1 = Button(root,text="Add Book Details",bg='#c3ff00', fg='#ff3b00', command=addBook)
-btn1.place(relx=0.28,rely=0.3, relwidth=0.45,relheight=0.1)
+btn1.place(relx=0.28,rely=0.28, relwidth=0.45,relheight=0.1)
     
 btn2 = Button(root,text="View Book List",bg='#c3ff00', fg='#ff3b00', command=View)
-btn2.place(relx=0.28,rely=0.4, relwidth=0.45,relheight=0.1)
+btn2.place(relx=0.28,rely=0.38, relwidth=0.45,relheight=0.1)
     
-btn3 = Button(root,text="Issue Book to Student",bg='#c3ff00', fg='#ff3b00', command = issueBook)
-btn3.place(relx=0.28,rely=0.5, relwidth=0.45,relheight=0.1)
+btn3 = Button(root,text="Issue Book to Member",bg='#c3ff00', fg='#ff3b00', command = issueBook)
+btn3.place(relx=0.28,rely=0.48, relwidth=0.45,relheight=0.1)
 
 btn4 = Button(root,text="Return Book",bg='#c3ff00', fg='#ff3b00', command = returnBook)
-btn4.place(relx=0.28,rely=0.6, relwidth=0.45,relheight=0.1)
+btn4.place(relx=0.28,rely=0.58, relwidth=0.45,relheight=0.1)
 
 btn5 = Button(root,text="Issue new member",bg='#c3ff00', fg='#ff3b00', command= addMem)
-btn5.place(relx=0.28,rely=0.7, relwidth=0.45,relheight=0.1)
+btn5.place(relx=0.28,rely=0.68, relwidth=0.45,relheight=0.1)
 
-btn6 = Button(root,text="Delete member",bg='#c3ff00', fg='#ff3b00', command= deleteMem)
-btn6.place(relx=0.28,rely=0.8, relwidth=0.45,relheight=0.1)
+btn6 = Button(root,text="Delete member",bg='#c3ff00', fg='#ff3b00', command= delete)
+btn6.place(relx=0.28,rely=0.78, relwidth=0.45,relheight=0.1)
 
 btn7 = Button(root,text="View members",bg='#c3ff00', fg='#ff3b00', command= ViewMem)
-btn7.place(relx=0.28,rely=0.9, relwidth=0.45,relheight=0.1)
+btn7.place(relx=0.28,rely=0.88, relwidth=0.45,relheight=0.1)
+
+## Left 
+btn8 = Button(root,text="DAILY CHECK",bg='#c3ff00', fg='#ff3b00')#, command= Check)
+btn8.place(relx=0.05,rely=0.58, relwidth=0.20,relheight=0.1)
+
+## Right
+btn8 = Button(root,text="Search Member",bg='#c3ff00', fg='#ff3b00', command= search)
+btn8.place(relx=0.75,rely=0.53, relwidth=0.20,relheight=0.1)
+
+btn9 = Button(root,text="Search Book",bg='#c3ff00', fg='#ff3b00', command= search1)
+btn9.place(relx=0.75,rely=0.63, relwidth=0.20,relheight=0.1)
 
 root.mainloop()

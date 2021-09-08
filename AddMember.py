@@ -7,10 +7,12 @@ def memRegister():
     
     memid = memInfo1.get()
     name = memInfo2.get()
+    name = name.upper()
     address = memInfo3.get()
+    address = address.upper()
     Aadhar = memInfo4.get()
     DateOfIssue = memInfo5.get()
-    
+        
     insertMem = "insert into "+memTable+" values('"+memid+"','"+name+"','"+address+"','"+Aadhar+"','"+DateOfIssue+"')"
     try:
         cur.execute(insertMem)

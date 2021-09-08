@@ -12,7 +12,9 @@ def bookRegister():
 
     bookid = bookInfo1.get()
     title = bookInfo2.get()
+    title = title.upper()
     author = bookInfo3.get()
+    author = author.upper()
     status = bookInfo4
     
 
