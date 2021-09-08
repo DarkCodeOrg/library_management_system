@@ -4,12 +4,12 @@ import pymysql
 from tkinter import messagebox 
 
 from AddBook import *
-#from DeleteBook import *
 from ViewBooks import *
 from IssueBook import *
 from ReturnBook import *
 from AddMember import *
 from DeleteMember import *
+from ViewMembers import *
 
 #TODO(write all the above programs )
 
@@ -72,7 +72,7 @@ btn5.place(relx=0.28,rely=0.7, relwidth=0.45,relheight=0.1)
 btn6 = Button(root,text="Delete member",bg='#c3ff00', fg='#ff3b00', command= deleteMem)
 btn6.place(relx=0.28,rely=0.8, relwidth=0.45,relheight=0.1)
 
-btn7 = Button(root,text="View members",bg='#c3ff00', fg='#ff3b00') #, command= viewMem)
+btn7 = Button(root,text="View members",bg='#c3ff00', fg='#ff3b00', command= ViewMem)
 btn7.place(relx=0.28,rely=0.9, relwidth=0.45,relheight=0.1)
 
 root.mainloop()
