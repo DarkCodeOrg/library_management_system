@@ -13,7 +13,7 @@ from ViewMembers import *
 from SearchMember import *
 from SearchBook import *
 
-#TODO(write all the above programs )
+
 
 # Add your own database name and password here to reflect in the code
 mypass = "abc_123"
