@@ -59,3 +59,21 @@ For windows machine you'd need to download MySql from [MySql.org](https://www.my
     * search for members
     * search for books
 
+## How to setup 
+
+# MySql Setup
+
+    * create user 'librarian'@'localhost' identified by 'your_password_here';
+    * create database library_db;
+    * use database library_db;
+    * create table books(bookid varchar(20) primary key, title varchar(30), author varchar(30), status varchar(30));
+    * create table books_issued(bookid varchar(20) primary key, issuedto varchar(30));
+    * create table members(memid varchar(20) primary key, name varchar(30), address varchar(60), Aadhar_no bigint(20), date_joined varchar(20))
+    * grant all privileges on library_db.* to 'librarian'@'localhost';
+    
+# python setup 
+    * pip install pymysql
+    * pip install pillow
+    * pip install tkinter
+    
+    
